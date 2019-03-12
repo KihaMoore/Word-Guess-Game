@@ -1,0 +1,108 @@
+body {
+    font-family: 'Avenir Next',Helvetica,Arial;
+    background-image: url("../delicious-dessert-donut-1832715のコピー.jpg");
+    background-size: cover;
+    background-position:center; 
+    
+}
+
+
+
+#title {
+	text-align: center;
+    font-size:70px;
+    color:white;
+    padding-top:80px;
+    
+        
+        /* 背景グラデーションを指定・幅を 200% にしておく */
+        background: linear-gradient(to right, rgba(253, 21, 149, 0.555) 0%, #0dd 57.14%, rgb(117, 117, 245) 71.42%, rgb(250, 27, 250) 85.71%, rgba(253, 21, 149, 0.555)0 100%) 0% center / 200% auto;
+        /* 背景画像を文字でマスクする */
+                background-clip: text;
+        -webkit-background-clip: text;
+        /* 文字色を透明にできればよく color: transparent でも color: rgba(0, 0, 0, 0) でも可 */
+                text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        /* アニメーション指定 */
+        animation: example 5s linear infinite;
+      }
+      
+      /* 背景の横位置をズラす */
+      @keyframes example {
+        to { background-position-x: 200%; }
+      }
+      
+      
+      
+      @keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+  
+  
+  #instruction {
+    animation-duration: 4s;
+    animation: blink 1s ease-in-out infinite alternate;
+    animation-iteration-count: 4 ;
+    text-align: center;
+    font-size: 30px;
+    margin-top:40px;
+    color:white;
+  }
+  
+  
+      #guessed-letters{
+          color:grey;
+          
+      }
+
+p{
+    font-size:30px;
+}
+
+.panel {
+	
+	padding: 20px;
+	margin: 10px;
+}
+
+span{
+    color:rgb(243, 41, 125);
+}
+
+#word-display {
+
+    color:rgb(243, 41, 125);
+    font-size: 40px;
+
+}
+
+
+
+p{
+    padding-left:610px;
+font-size:30px;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
