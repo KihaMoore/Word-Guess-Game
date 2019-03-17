@@ -1,6 +1,5 @@
 var wins = 0;
 var losses = 0;
-
 var maxErrors = 9;
 
 var wordDisplayLettersElement = document.getElementById("word-display-letters");
@@ -98,33 +97,33 @@ function SweetsGuess() {
      }
      wordDisplayLettersElement.textContent = tempString;
 
-     tempString = "";
-     for (var i = 0; i < this.guessedLetters.length; i++) {
-         tempString += (this.guessedLetters[i].toUpperCase());
+      tempString = "";
+      for (var i = 0; i < this.guessedLetters.length; i++) {
+        tempString += (this.guessedLetters[i].toUpperCase());
          if (i < (this.guessedLetters.length - 1)) tempString += " ";
      }
-     for (var i = tempString.length; i < 51; i++) {
-         tempString += " ";
+    
+      guessedLettersElement.textContent = tempString;
+     
+      tempString = this.errors + " / " + maxErrors;
+      for (var i = tempString.length; i < 10; i++) {
+          tempString += " ";
      }
-     guessedLettersElement.textContent = tempString;
-
-     tempString = this.errors + " / " + maxErrors;
-     for (var i = tempString.length; i < 32; i++) {
-         tempString += " ";
-     }
+     
      errorCountElement.textContent = tempString;
 
-     tempString = wins + "";
-     for (var i = tempString.length; i < 45; i++) {
-         tempString += " ";
-     }
-     winCountElement.textContent = tempString;
+      tempString = wins + "";
+       for (var i = tempString.length; i < 10; i++) {
+          tempString += " ";
+      }
+      
+      winCountElement.textContent = tempString;
 
-     tempString = losses + "";
-     for (var i = tempString.length; i < 43; i++) {
-         tempString += " ";
-     }
-     lossCountElement.textContent = tempString;
+      tempString = losses + "";
+     for (var i = tempString.length; i < 10; i++) {
+          tempString += " ";
+      }
+       lossCountElement.textContent = tempString;
 
     
     

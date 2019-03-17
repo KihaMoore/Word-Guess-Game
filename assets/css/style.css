@@ -24,7 +24,7 @@ body {
                 text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         /* アニメーション指定 */
-        animation: example 5s linear infinite;
+        animation: example 2s linear infinite;
       }
       
       /* 背景の横位置をズラす */
